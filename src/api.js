@@ -1,6 +1,6 @@
-import uuid from "uuid";
+const uuid = require('uuid');
 
-export const fetchAPIsTodos = () => {
+ const fetchAPIsTodos = () => {
     return new Promise((resolve) => setTimeout(() => resolve([
         {
           id: uuid.v4(),
@@ -14,3 +14,5 @@ export const fetchAPIsTodos = () => {
           }
     ]), 1000));
 }
+
+module.exports = fetchAPIsTodos;
