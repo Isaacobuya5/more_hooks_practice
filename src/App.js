@@ -152,7 +152,7 @@ const App = () => {
 
  // toggle completion status of todo
 function toggleTodo(id) {
-    dispatch(toggleTodoItems);
+    dispatch(toggleTodoItems(id));
 }
 
 function removeTodo(id) {

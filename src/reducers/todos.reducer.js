@@ -22,7 +22,7 @@ export const todosReducer = (state=[], action) => {
                         completed: !todo.completed
                     }
                 }
-                return true;
+                return todo;
             },[]);
             default:
                 return state;

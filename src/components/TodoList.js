@@ -21,6 +21,6 @@ import { StateContext } from "../contexts/StateContexts";
 
 const TodoList = (props) => {
     const items = useContext(StateContext);
-    return items.map(item => <TodoItem key={item.id} {...item} {...props} />);
+    return items.map((item, index) => <TodoItem key={index} {...item} {...props} />);
 } 
 export default TodoList;
