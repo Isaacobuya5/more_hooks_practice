@@ -7,25 +7,25 @@ export const fetchTodos = (todos) => ({
 });
 
 // action to add a new todo
-export const addTodo = (title) => ({
+export const addNewTodo = (title) => ({
     type: actionTypes.ADD_TODO,
     title
 });
 
 // action to toggle todo
-export const toggleTodo = (id) => ({
+export const toggleTodoItems = (id) => ({
     type: actionTypes.TOGGLE_TODO,
     id
 });
 
 // action to remove todo
-export const removeTodo = (id) => ({
+export const removeTodoItem = (id) => ({
     type: actionTypes.REMOVE_TODO,
     id
 });
 
 // action to filter todo
-export const filterTodos = (filter) => ({
+export const filterTodosList = (filter) => ({
     type: actionTypes.FILTER_TODOS,
     filter
 });
