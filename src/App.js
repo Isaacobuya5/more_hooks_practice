@@ -109,7 +109,7 @@ class App extends React.Component {
       <Header />
       <AddTodo addTodo={this.addTodo}/>
       <hr />
-      <TodoList />
+      <TodoList toggleTodo={this.toggleTodo} removeTodo={this.removeTodo} />
       <hr />
       <TodoFilter filter={filter} filterTodos={this.filterTodos}/>
     </div>
