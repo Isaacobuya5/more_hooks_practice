@@ -1,10 +1,11 @@
 import React from 'react';
+import { v4 } from "uuid";
 
 import Header from "./components/Header";
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
 import TodoFilter from "./components/TodoFilter";
-import { v4 } from "uuid";
+
 
 import { StateContext } from "./contexts/StateContexts";
 import fetchAPIsTodos from "./api";
@@ -103,7 +104,7 @@ class App extends React.Component {
 
     const { filter, filteredTodos } = this.state;
   return (
-    <StateContext provider={filteredTodos}>
+    <StateContext.Provider value={filteredTodos}>
     <div style={{ width: 400, margin: 20 }}>
       <Header />
       <AddTodo addTodo={this.addTodo}/>
@@ -112,7 +113,7 @@ class App extends React.Component {
       <hr />
       <TodoFilter filter={filter} filterTodos={this.filterTodos}/>
     </div>
-    </StateContext>
+    </StateContext.Provider>
   );
 }
 }
