@@ -1,0 +1,7 @@
+export const actionTypes = {
+    FETCH_TODOS: "FETCH_TODOS",
+    ADD_TODO: "ADD_TODO",
+    TOGGLE_TODO: "TOGGLE_TODO",
+    REMOVE_TODO: "REMOVE_TODO",
+    FILTER_TODOS: "FILTER_TODOS"
+};
